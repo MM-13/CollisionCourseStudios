@@ -77,10 +77,6 @@
         text-align: center;
     }
 
-    .home-title h3 {
-        margin-top: -2.5rem;
-    }
-
     header {
         position: relative;
     }
@@ -121,10 +117,6 @@
 
     .homepage p {
         font-size: 0.95rem;
-    }
-
-    .home-title h3 {
-        margin-top: -2.25rem;
     }
 
     footer p {
