@@ -29,7 +29,7 @@ body {
     background-repeat: repeat;
     background-position: 0 50%;
     background-size: auto;
-    animation: scroll-bg 60s linear infinite;
+    /*animation: scroll-bg 60s linear infinite;*/
 }
 
 @keyframes scroll-bg {
