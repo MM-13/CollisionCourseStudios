@@ -24,7 +24,6 @@ body {
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    /* Use repeating-x so the image tiles horizontally */
     background-image: url('Images/Background.png');
     background-repeat: repeat;
     background-position: 0 50%;
@@ -33,8 +32,8 @@ body {
 }
 
 @keyframes scroll-bg {
-    from { background-position: 0 50%; }
-    to   { background-position: -800% 400%; }
+    from { background-position: 0px 50%; }
+    to   { background-position: 4800px -1200px; }
 }
 
 
