@@ -66,9 +66,9 @@
 main {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     background: #111;
     border-bottom: 4px solid #ef0000;
 }
@@ -93,10 +93,10 @@ main::after {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-        105deg,
-        transparent 30%,
+        90deg,
+        transparent 20%,
         rgba(239, 0, 0, 0.08) 50%,
-        transparent 70%
+        transparent 80%
     );
     pointer-events: none;
 }
