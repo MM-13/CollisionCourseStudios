@@ -25,11 +25,11 @@ body {
     height: 100vh;
     overflow: hidden;
     /* Use repeating-x so the image tiles horizontally */
-    background-image: url('/Images/Background.png');
+    background-image: url('Images/Background.png');
     background-repeat: repeat;
     background-position: 0 50%;
     background-size: auto;
-    /*animation: scroll-bg 60s linear infinite;*/
+    animation: scroll-bg 60s linear infinite;
 }
 
 @keyframes scroll-bg {
