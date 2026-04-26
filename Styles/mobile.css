@@ -1,0 +1,133 @@
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 840px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 200;
+    }
+
+    nav.open {
+        max-height: max-content;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.75rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1.25rem;
+    }
+
+    .homepage p {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    .home-logo {
+        max-width: 70%;
+    }
+
+    .home-title {
+        text-align: center;
+    }
+
+    .home-title h3 {
+        margin-top: -2.5rem;
+    }
+
+    header {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .oswald-header {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    .homepage p {
+        font-size: 0.95rem;
+    }
+
+    .home-title h3 {
+        margin-top: -2.25rem;
+    }
+
+    footer p {
+        font-size: .75rem;
+    }
+}
