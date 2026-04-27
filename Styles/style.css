@@ -24,19 +24,30 @@ body {
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    background-image: url(../Images/Background.png);
-    background-repeat: repeat;
-    background-position: 0 50%;
-    background-size: auto;
-    animation: scroll-bg 60s linear infinite;
+    background-color: transparent;
 }
 
 @keyframes scroll-bg {
-    from { background-position: 0px 50%; }
-    to   { background-position: 4800px -1200px; }
+    from { background-position: 0px 0px; }
+    to   { background-position: 4800px 1200px; }
 }
 
-
+body::before {
+    content: "";
+    position: fixed;
+    width: 300vw;
+    height: 300vh;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    background-image: url(../Images/max-speed-tileable.png);
+    background-size: 150px;
+    background-repeat: repeat;
+    background-position: 0 0;
+    animation: scroll-bg 60s linear infinite;
+    -webkit-animation: scroll-bg 60s linear infinite; /* Safari and Chrome */
+}
 
 /* Main & sections */
 main {
