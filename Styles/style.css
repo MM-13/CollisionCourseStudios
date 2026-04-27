@@ -155,10 +155,9 @@ footer p { font-size: 1rem; }
 
 
 /* iFrame */
-.game-list {
+.game-list, .about-us {
     width: 100%;
     height: 100%;
     border: none;
     display: block;
-    pointer-events: all;
 }
