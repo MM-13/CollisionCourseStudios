@@ -156,5 +156,24 @@
             </div>
         </section>
     </main>
+
+    <script>
+    const body = document.documentElement;
+
+    function reportScrollState() {
+        const atTop = body.scrollTop === 0;
+        const atBottom = body.scrollTop + body.clientHeight >= body.scrollHeight - 1;
+
+        parent.postMessage({
+            type: "iframeScrollState",
+            top: atTop,
+            bottom: atBottom
+        }, "*");
+    }
+
+    document.addEventListener("scroll", reportScrollState);
+
+    reportScrollState();
+</script>
 </body>
 </html>
