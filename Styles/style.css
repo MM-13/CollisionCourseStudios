@@ -69,7 +69,7 @@ section {
 /*.homepage::-webkit-scrollbar { display: none; }*/
 
 .homepage section {
-    height: 100%;
+    height: 101%;
     scroll-snap-align: start;
 }
 
