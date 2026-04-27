@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collision Course Studios - We make arcade racing games for everyone</title>
-    <link rel="stylesheet" href="../Styles/games.css">
+    <link rel="stylesheet" href="../Styles/gameslist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -14,12 +14,10 @@
         <section id="banner">
             <div class="banner-inner">
                 <h2>Our Games<!--<span class="banner-flag">🏁</span>--></h2>
-                <!--<p>Arcade racing built for everyone. Pick up, play, and chase that high score.</p>-->
             </div>
         </section>
 
         <section id="games">
-            <h2>Collision Course Games</h2>
 
             <div class="game-grid">
 
@@ -82,74 +80,7 @@
                         </div>
                     </div>
                     <div class="game-card-footer">
-                        <a class="play-btn" href="" target="_blank" rel="noopener">Play Now</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <section id="games">
-            <h2>Games by Founders</h2>
-
-            <div class="game-grid">
-
-                <div class="game-card">
-                    <div class="game-card-thumb">
-                         <img src="../Images/HuntsmanIsle_Thumbnail.png" alt="Huntsman Isle Thumbnail">
-                    </div>
-                    <div class="game-card-body">
-                        <h3 class="game-card-title">Huntsman Isle</h3>
-                        <p class="game-card-desc">
-                            Scavenge for parts, avoid traps and sneak through the unknown land of Huntsman Isle to rebuild your escape... or fall prey to the island's relentless hunter.
-                        </p>
-                        <div class="game-card-tags">
-                            <span class="game-tag">Horror</span>
-                            <span class="game-tag">Exploration</span>
-                            <span class="game-tag">Survival</span>
-                        </div>
-                    </div>
-                    <div class="game-card-footer">
-                        <a class="play-btn" href="https://mm-13.itch.io/huntsman-isle" target="_blank" rel="noopener">Get On Itch</a>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <div class="game-card-thumb">
-                         <img src="../Images/SouperBloody_Thumbnail.png" alt="Souper Bloody Thumbnail">
-                    </div>
-                    <div class="game-card-body">
-                        <h3 class="game-card-title">Souper Bloody</h3>
-                        <p class="game-card-desc">
-                            Souper Bloody is a rougelite hack-and-slash where you play as a demon from the lowest layer of the Underlasagne. You can only move around in the blood of your enemies, so get slashing!
-                        </p>
-                        <div class="game-card-tags">
-                            <span class="game-tag">Action</span>
-                            <span class="game-tag">Roguelike</span>
-                            <span class="game-tag">Hack and SLash</span>
-                        </div>
-                    </div>
-                    <div class="game-card-footer">
-                        <a class="play-btn" href="https://store.steampowered.com/app/4368980/Souper_Bloody/" target="_blank" rel="noopener">Get On Steam</a>
-                    </div>
-                </div>
-
-                <div class="game-card">
-                    <div class="game-card-thumb no-image">
-                         <!--<img src="../Images/SpaceCadetMinesweeper_Thumbnail.png" alt="Space Cadet Minesweeper Thumbnail">-->
-                    </div>
-                    <div class="game-card-body">
-                        <h3 class="game-card-title">Man's Best Friend</h3>
-                        <p class="game-card-desc">
-                            A game where you play as a dog...
-                        </p>
-                        <div class="game-card-tags">
-                            <span class="game-tag">Horror</span>
-                            <span class="game-tag">Single-player</span>
-                            <span class="game-tag">Psychological</span>
-                        </div>
-                    </div>
-                    <div class="game-card-footer">
-                        <a class="play-btn" href="https://mathiesvdb.itch.io/mans-best-friend" target="_blank" rel="noopener">Play Now</a>
+                        <a class="play-btn" href="https://www.crazygames.com/game/fuel-frenzy-ahk" target="_blank" rel="noopener">Play Now</a>
                     </div>
                 </div>
 
