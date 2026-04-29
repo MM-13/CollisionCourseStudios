@@ -8,7 +8,7 @@ h1, h2, h3 {
 }
 
 .oswald-header { font-size: 2rem; }
-h1 { font-size: 4rem; color: #333; }
+h1 { font-size: 4rem; color: #f4f4f4; }
 h2 { font-size: 3rem; color: #333; }
 h3 { font-size: 2rem; color: red; }
 
@@ -98,7 +98,23 @@ section {
 .home-title {
     width: 80%;
     line-height: 5px;
+    background-image: url(../Images/TitleBackground.png);
+    background-size: 850px auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+#home {
+    background-color: transparent;
+    background-image: url(../Images/Banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 /* Header & nav */
 header {
