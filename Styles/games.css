@@ -4,6 +4,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+main {
+    top: 0;
+    bottom: 0;
+    max-height: 100%;
+}
+
 /* Banner */
 #banner {
     position: relative;
@@ -85,17 +91,16 @@ body {
 
 
 /* Games section */
-#games {
+#games, #about {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 2rem 3rem;
     /*align-items: flex-start;*/
     background: #f4f4f4;
-    min-height: calc(100% - 220px);
 }
 
-#games > h2 {
+#games > h2, #about > h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -105,7 +110,7 @@ body {
     display: inline-block;
 }
 
-#games > h2::after {
+#games > h2::after, #about > h2::after {
     content: "";
     display: block;
     height: 4px;
@@ -293,7 +298,7 @@ body {
         min-height: 160px;
     }
 
-    #games {
+    #games, #about {
         padding: 1.75rem 1rem 2.5rem;
     }
 
@@ -303,7 +308,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    #games {
+    #games, #about {
         padding: 1.25rem 0.75rem 2rem;
     }
 
