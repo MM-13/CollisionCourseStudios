@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mm-13.github.io/CollisionCourseStudios/sitemap.xml
