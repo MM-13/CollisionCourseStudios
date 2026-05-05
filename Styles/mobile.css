@@ -33,6 +33,10 @@
         display: flex;
     }
 
+    header {
+        position: relative;
+    }
+
     nav {
         position: absolute;
         top: 100%;
@@ -64,6 +68,11 @@
         font-size: 1.25rem;
     }
 
+    /* Homepage */
+    .homepage section {
+        height: calc(100dvh - 7.99rem);
+    }
+
     .homepage p {
         max-width: 90%;
         font-size: 1rem;
@@ -73,17 +82,21 @@
         max-width: 70%;
     }
 
+    /* Fix title background for mobile */
     .home-title {
+        width: 95%;
         text-align: center;
         line-height: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .home-title h3 {
-        margin-top: -20px;
-    }
-
-    header {
-        position: relative;
+        margin-top: 0.5rem;
     }
 
     h1 {
@@ -110,6 +123,18 @@
 
     .homepage p {
         font-size: 0.95rem;
+    }
+
+    .home-title {
+        width: 95%;
+        text-align: center;
+        line-height: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     footer p {
