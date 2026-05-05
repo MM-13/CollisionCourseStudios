@@ -53,7 +53,7 @@ main {
 
 .banner-inner {
     position: relative;
-    z-index: 1;
+    /*z-index: 1;*/
     text-align: center;
 }
 
@@ -91,7 +91,7 @@ main {
 
 
 /* Games section */
-#games, #about {
+#games, #about, #founder-games {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ main {
     background: #f4f4f4;
 }
 
-#games > h2, #about > h2 {
+#games > h2, #about > h2, #founder-games > h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -110,7 +110,7 @@ main {
     display: inline-block;
 }
 
-#games > h2::after, #about > h2::after {
+#games > h2::after, #about > h2::after, #founder-games > h2::after {
     content: "";
     display: block;
     height: 4px;
@@ -298,7 +298,7 @@ main {
         min-height: 160px;
     }
 
-    #games, #about {
+    #games, #founder-games, #about {
         padding: 1.75rem 1rem 2.5rem;
     }
 
@@ -308,7 +308,7 @@ main {
 }
 
 @media (max-width: 480px) {
-    #games, #about {
+    #games, #founder-games, #about {
         padding: 1.25rem 0.75rem 2rem;
     }
 
@@ -319,4 +319,8 @@ main {
     .game-card-footer {
         padding: 0 1rem 1rem;
     }
+}
+
+header {
+    max-height: 0;
 }
