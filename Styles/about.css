@@ -10,7 +10,7 @@ main {
     align-items: center;
     background: #111;
     border-bottom: 4px solid #ef0000;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
