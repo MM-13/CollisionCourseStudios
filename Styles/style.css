@@ -14,7 +14,7 @@ h3 { font-size: 2rem; color: red; }
 
 p {
     font-size: 1.25rem;
-    line-height: 1;
+    line-height: 1.5;  /* Fixed: was 1, making text cramped */
 }
 
 /* Body */
@@ -46,18 +46,19 @@ body::before {
     background-repeat: repeat;
     background-position: 0 0;
     animation: scroll-bg 60s linear infinite;
-    -webkit-animation: scroll-bg 60s linear infinite; /* Safari and Chrome */
+    -webkit-animation: scroll-bg 60s linear infinite;
 }
 
 /* Main & sections */
 main {
     position: fixed;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;  /* Changed from overflow: auto */
+    overflow-x: hidden;
     background-color: #111;
     top: 5rem;
     bottom: 3rem;
-    height: calc(100vh - 8rem); /* 5rem header + 3rem footer */
+    height: calc(100vh - 8rem);
 }
 
 section {
@@ -70,8 +71,9 @@ section {
 /* Homepage */
 .homepage {
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;  /* Changed from scroll */
     scroll-snap-type: y mandatory;
+    -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
     /*-ms-overflow-style: none;
     scrollbar-width: none;*/
 }
@@ -116,8 +118,6 @@ section {
     background-position: center;
 }
 
-
-
 /* Header & nav */
 header {
     color: white;
@@ -126,6 +126,11 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 header .logo { 
@@ -137,6 +142,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 nav ul .right { margin-left: auto; }
@@ -157,8 +164,6 @@ nav ul li a:hover,
 nav ul li a:active { color: red; }
 nav ul li a:hover { text-decoration: underline; }
 
-
-
 /* Footer */
 footer {
     position: fixed;
@@ -170,12 +175,79 @@ footer {
 
 footer p { font-size: 1rem; }
 
-
-
 /* iFrame */
 .game-list, .about-us {
     width: 100%;
+    /* height: calc(100vh - 8rem);  Match the header+footer offset */
     height: 100%;
     border: none;
     vertical-align: top;
+}
+
+
+@media (max-width: 840px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    .oswald-header { font-size: 1.5rem; }
+    
+    p { font-size: 1rem; }
+    
+    main {
+        top: 4rem;
+        bottom: 2.5rem;
+    }
+    
+    .homepage section {
+        min-height: calc(100dvh - 6.5rem);
+    }
+    
+    .home-logo {
+        max-width: 70%;
+    }
+    
+    .home-title {
+        width: 95%;
+        text-align: center;
+        background-size: contain;
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .homepage p {
+        max-width: 90%;
+    }
+    
+    header {
+        padding: 0.5rem;
+    }
+    
+    header .logo {
+        max-height: 3rem;
+    }
+    
+    footer p { font-size: 0.9rem; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+    
+    .oswald-header { font-size: 1.25rem; }
+    
+    p { font-size: 0.9rem; }
+    
+    .homepage p {
+        font-size: 0.95rem;
+        max-width: 95%;
+    }
+    
+    .home-logo {
+        max-width: 85%;
+    }
+    
+    footer p { font-size: 0.75rem; }
 }

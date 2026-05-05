@@ -17,7 +17,6 @@
     transition: all 0.3s ease;
 }
 
-
 .hamburger.open span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -34,7 +33,7 @@
     }
 
     header {
-        position: relative;
+        position: fixed;  /* Added fixed positioning */
     }
 
     nav {
@@ -57,6 +56,7 @@
         flex-direction: column;
         padding: .5rem;
         text-align: center;
+        display: flex;
     }
 
     nav ul li {
@@ -70,7 +70,7 @@
 
     /* Homepage */
     .homepage section {
-        height: calc(100dvh - 7.99rem);
+        min-height: calc(100dvh - 7.99rem);  /* Use dvh for mobile browsers */
     }
 
     .homepage p {
@@ -86,10 +86,8 @@
     .home-title {
         width: 95%;
         text-align: center;
-        line-height: 1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left center;
+        line-height: 1.4;  /* Better line height */
+        background-size: contain;  /* Better background sizing */
         padding-left: 0;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -125,19 +123,12 @@
         font-size: 0.95rem;
     }
 
-    .home-title {
-        width: 95%;
-        text-align: center;
-        line-height: 1;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: left center;
-        padding-left: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
     footer p {
         font-size: .75rem;
     }
+    
+    /* Ensure iframe content fills properly on small screens */
+    /* .game-list, .about-us {
+        height: calc(100dvh - 6.5rem);
+    } */
 }

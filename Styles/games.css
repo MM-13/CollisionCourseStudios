@@ -7,7 +7,7 @@ body {
 main {
     top: 0;
     bottom: 0;
-    max-height: 100%;
+    min-height: 100%;
 }
 
 /* Banner */
@@ -305,9 +305,17 @@ main {
     .game-grid {
         grid-template-columns: 1fr;
     }
+    
+    .game-card-title {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
+    #banner {
+        min-height: 140px;
+    }
+    
     #games, #founder-games, #about {
         padding: 1.25rem 0.75rem 2rem;
     }
@@ -319,8 +327,16 @@ main {
     .game-card-footer {
         padding: 0 1rem 1rem;
     }
-}
-
-header {
-    max-height: 0;
+    
+    .game-card-title {
+        font-size: 1.1rem;
+    }
+    
+    .game-card-desc {
+        font-size: 0.85rem;
+    }
+    
+    .banner-inner h2 {
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    }
 }
