@@ -113,9 +113,19 @@ section {
 
 #home {
     background-color: transparent;
-    background-image: url(../Images/Banner.png);
+    background-image: url(../Videos/FF_VIDEO_H.webm);
     background-size: cover;
     background-position: center;
+}
+
+.video-background {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Header & nav */
